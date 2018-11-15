@@ -20,7 +20,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     LDSModuleViewController *mvc = [LDSModuleViewController new];
-    mvc.url = @"http://172.24.22.29:3000";
+//    mvc.url = @"http://172.24.22.29:3000";
+    mvc.filepath = @"";
     self.window.rootViewController = mvc;
     return YES;
 }

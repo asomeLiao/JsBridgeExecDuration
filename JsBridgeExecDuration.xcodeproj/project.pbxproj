@@ -13,8 +13,8 @@
 		C151EC0C219D014800ABCC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C151EC0B219D014800ABCC6D /* Assets.xcassets */; };
 		C151EC0F219D014800ABCC6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C151EC0D219D014800ABCC6D /* LaunchScreen.storyboard */; };
 		C151EC12219D014800ABCC6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C151EC11219D014800ABCC6D /* main.m */; };
-		C151EC19219D02A800ABCC6D /* dist in Resources */ = {isa = PBXBuildFile; fileRef = C151EC18219D02A800ABCC6D /* dist */; };
 		C151EC1C219D0B4800ABCC6D /* LDSModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C151EC1A219D0B4600ABCC6D /* LDSModuleViewController.m */; };
+		C151EC20219D3EBF00ABCC6D /* build in Resources */ = {isa = PBXBuildFile; fileRef = C151EC1F219D3EBF00ABCC6D /* build */; };
 		E7545ADCD18F0D04BE798FBB /* libPods-JsBridgeExecDuration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9A67E45A2A7F3277348186 /* libPods-JsBridgeExecDuration.a */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +31,9 @@
 		C151EC0E219D014800ABCC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C151EC10219D014800ABCC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C151EC11219D014800ABCC6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C151EC18219D02A800ABCC6D /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
 		C151EC1A219D0B4600ABCC6D /* LDSModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSModuleViewController.m; sourceTree = "<group>"; };
 		C151EC1B219D0B4700ABCC6D /* LDSModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSModuleViewController.h; sourceTree = "<group>"; };
+		C151EC1F219D3EBF00ABCC6D /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
 		F904F4CEFA484D44E404124D /* Pods-JsBridgeExecDuration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsBridgeExecDuration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsBridgeExecDuration/Pods-JsBridgeExecDuration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,7 @@
 		C151EC01219D013C00ABCC6D /* JsBridgeExecDuration */ = {
 			isa = PBXGroup;
 			children = (
-				C151EC18219D02A800ABCC6D /* dist */,
+				C151EC1F219D3EBF00ABCC6D /* build */,
 				C151EC02219D013C00ABCC6D /* AppDelegate.h */,
 				C151EC03219D013C00ABCC6D /* AppDelegate.m */,
 				C151EC05219D013C00ABCC6D /* ViewController.h */,
@@ -161,8 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C151EC19219D02A800ABCC6D /* dist in Resources */,
 				C151EC0F219D014800ABCC6D /* LaunchScreen.storyboard in Resources */,
+				C151EC20219D3EBF00ABCC6D /* build in Resources */,
 				C151EC0C219D014800ABCC6D /* Assets.xcassets in Resources */,
 				C151EC0A219D013D00ABCC6D /* Main.storyboard in Resources */,
 			);
