@@ -7,5 +7,5 @@ target 'JsBridgeExecDuration' do
 
   # Pods for JsBridgeExecDuration
   pod 'WebViewJavascriptBridge'
-
+  pod 'CocoaHTTPServer'
 end

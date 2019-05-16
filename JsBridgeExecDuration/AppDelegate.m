@@ -2,15 +2,17 @@
 //  AppDelegate.m
 //  JsBridgeExecDuration
 //
-//  Created by leedarson on 2018/11/15.
+//  Created by asml on 2018/11/15.
 //  Copyright © 2018 asml. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "LDSModuleViewController.h"
-
+#import "HTTPServer.h"
 @interface AppDelegate ()
-
+{
+    HTTPServer *_httpServer;
+}
 @end
 
 @implementation AppDelegate
@@ -18,11 +20,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    _httpServer = [[HTTPServer alloc] init];
+    [_httpServer setType:@"_http._tcp."];
+    [_httpServer setPort:5565];
+    [_httpServer setConnectionClass:NSClassFromString(@"JSBridgeConnection")];
+    [_httpServer setDocumentRoot:[[NSBundle mainBundle] pathForResource:@"build" ofType:nil]];
+    NSError *error = nil;
+    [_httpServer start:&error];
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     LDSModuleViewController *mvc = [LDSModuleViewController new];
-//    mvc.url = @"http://172.24.22.29:3000";
-    mvc.filepath = @"";
-    self.window.rootViewController = mvc;
+    mvc.url = @"http://172.24.27.30:3000";
+    //    mvc.filepath = @"";
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:mvc];
     return YES;
 }
 

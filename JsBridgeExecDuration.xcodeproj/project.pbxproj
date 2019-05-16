@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2881E3225DB93500859F3F /* JSBridgeWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2881E0225DB93500859F3F /* JSBridgeWebsocket.m */; };
+		BE2881E4225DB93500859F3F /* JSBridgeConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2881E2225DB93500859F3F /* JSBridgeConnection.m */; };
 		C151EC04219D013C00ABCC6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C151EC03219D013C00ABCC6D /* AppDelegate.m */; };
 		C151EC07219D013D00ABCC6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C151EC06219D013D00ABCC6D /* ViewController.m */; };
 		C151EC0A219D013D00ABCC6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C151EC08219D013D00ABCC6D /* Main.storyboard */; };
@@ -21,6 +23,10 @@
 /* Begin PBXFileReference section */
 		3A9A67E45A2A7F3277348186 /* libPods-JsBridgeExecDuration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JsBridgeExecDuration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A353158B6E1DEBE832A7D2F /* Pods-JsBridgeExecDuration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsBridgeExecDuration.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsBridgeExecDuration/Pods-JsBridgeExecDuration.release.xcconfig"; sourceTree = "<group>"; };
+		BE2881DF225DB93400859F3F /* JSBridgeWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBridgeWebsocket.h; sourceTree = "<group>"; };
+		BE2881E0225DB93500859F3F /* JSBridgeWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBridgeWebsocket.m; sourceTree = "<group>"; };
+		BE2881E1225DB93500859F3F /* JSBridgeConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBridgeConnection.h; sourceTree = "<group>"; };
+		BE2881E2225DB93500859F3F /* JSBridgeConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBridgeConnection.m; sourceTree = "<group>"; };
 		C151EBFF219D013C00ABCC6D /* JsBridgeExecDuration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsBridgeExecDuration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C151EC02219D013C00ABCC6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C151EC03219D013C00ABCC6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +98,10 @@
 				C151EC03219D013C00ABCC6D /* AppDelegate.m */,
 				C151EC05219D013C00ABCC6D /* ViewController.h */,
 				C151EC06219D013D00ABCC6D /* ViewController.m */,
+				BE2881E1225DB93500859F3F /* JSBridgeConnection.h */,
+				BE2881E2225DB93500859F3F /* JSBridgeConnection.m */,
+				BE2881DF225DB93400859F3F /* JSBridgeWebsocket.h */,
+				BE2881E0225DB93500859F3F /* JSBridgeWebsocket.m */,
 				C151EC1B219D0B4700ABCC6D /* LDSModuleViewController.h */,
 				C151EC1A219D0B4600ABCC6D /* LDSModuleViewController.m */,
 				C151EC08219D013D00ABCC6D /* Main.storyboard */,
@@ -197,9 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C151EC1C219D0B4800ABCC6D /* LDSModuleViewController.m in Sources */,
+				BE2881E3225DB93500859F3F /* JSBridgeWebsocket.m in Sources */,
 				C151EC07219D013D00ABCC6D /* ViewController.m in Sources */,
 				C151EC12219D014800ABCC6D /* main.m in Sources */,
 				C151EC04219D013C00ABCC6D /* AppDelegate.m in Sources */,
+				BE2881E4225DB93500859F3F /* JSBridgeConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
